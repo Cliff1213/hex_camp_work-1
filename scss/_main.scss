@@ -1,0 +1,174 @@
+// layout
+.container {
+  max-width: 1024px;
+}
+
+// main
+.navbar {
+  padding: 30px 40px;
+  &__logo {
+    width: 215px;
+    height: 40px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg');
+    @include textHide;
+  }
+  &__menu li {
+    padding: 0 20px;
+  }
+  &__menu li a {
+    padding: 8px 10px;
+    &:hover {
+      background: $color-primary;
+      color: $color-light;
+    }
+  }
+  &__icon {
+    margin-left: 49px;
+    &:hover {
+      transform: scale(120%);
+      transition: 0.3s;
+    }
+  }
+}
+
+.banner {
+  background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true')
+    no-repeat center center;
+  height: 496px;
+  margin-bottom: 60px;
+}
+
+.product {
+  padding: 0 42px;
+  margin-bottom: 10px;
+}
+.sidebar {
+  max-width: 300px;
+  width: 100%;
+  line-height: 1.2;
+  &__title {
+    padding: 16px;
+  }
+  &__list {
+    border-left: 1px solid $color-secondary;
+    border-right: 1px solid $color-secondary;
+  }
+  &__list li {
+    border-bottom: 1px solid $color-secondary;
+  }
+  &__list li a {
+    display: inline-block;
+    padding: 15px 0;
+    &:hover {
+      background: $color-secondary;
+    }
+  }
+}
+
+.cardsGroup {
+  width: 620px;
+}
+.card {
+  width: 300px;
+  margin-bottom: 20px;
+  &__img {
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true');
+    height: 315px;
+  }
+  &__detail {
+    border: 1px solid $color-secondary;
+  }
+  &__detail .name {
+    padding: 14px 0;
+    border-right: 1px solid $color-secondary;
+  }
+  &__detail .price {
+    padding: 14px 0;
+  }
+  &__btn {
+    padding: 16px 0;
+    &:hover {
+      background: $color-primary;
+      color: $color-light;
+    }
+  }
+  &__recommend {
+    writing-mode: vertical-lr;
+    letter-spacing: .3rem;
+    padding: 10px;
+    top: 0;
+    left: 20px;
+  }
+  &__icon {
+    right: 22px;
+    top: 19px;
+  }
+}
+
+.pagination {
+  padding: 0 42px;
+  margin-bottom: 60px;
+  li a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid $color-secondary;
+    &:hover {
+      background: $color-primary;
+      color: $color-light;
+    }
+  }
+}
+
+.footer__head {
+  padding: 30px 122px;
+}
+.text img {
+  margin-right: 20px;
+}
+.email {
+  &__icon {
+    padding: 16px 20px;
+  }
+  &__input {
+    width: 240px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__arrow {
+    padding: 16px 18px;
+    &:hover {
+      background: darken($color-warning, 10%);
+    }
+  }
+}
+
+.footer__info {
+  padding: 30px 122px;
+  line-height: 1.5;
+  .contact__detail {
+    margin-top: 115px;
+  }
+  .slogan {
+    font-family: 'Noto Serif TC';
+    writing-mode: vertical-lr;
+    letter-spacing: .3rem;
+  }
+  .slogan__text {
+    margin-top: 1rem;
+  }
+  .slogan__line {
+    width: 1px;
+    height: 44px;
+  }
+}
+
+.footer__floor {
+  padding: 0 122px 30px;
+  .social__line {
+    margin-right: 8px;
+  }
+}

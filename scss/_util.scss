@@ -1,0 +1,64 @@
+// util
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.text-primary {
+  color: $color-primary;
+}
+.text-light {
+  color: $color-light;
+}
+.bg-primary {
+  background: $color-primary;
+}
+.bg-secondary {
+  background: $color-secondary;
+}
+.bg-light {
+  background: $color-light;
+}
+.bg-warning {
+  background: $color-warning;
+}
+.text-center {
+  text-align: center;
+}
+.fs-lg {
+  font-size: 24px;
+}
+.fs-md {
+  font-size: 20px;
+}
+.w-100 {
+  width: 100%;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}

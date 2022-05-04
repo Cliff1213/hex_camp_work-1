@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: #3F5D45;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.bg-primary {
+  background: #3F5D45;
+}
+
+.bg-secondary {
+  background: #EAF0ED;
+}
+
+.bg-light {
+  background: #fff;
+}
+
+.bg-warning {
+  background: #FFE180;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fs-lg {
+  font-size: 24px;
+}
+
+.fs-md {
+  font-size: 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.navbar {
+  padding: 30px 40px;
+}
+
+.navbar__logo {
+  width: 215px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg");
+  text-indent: 101%;
+  word-spacing: nowrap;
+  overflow: hidden;
+}
+
+.navbar__menu li {
+  padding: 0 20px;
+}
+
+.navbar__menu li a {
+  padding: 8px 10px;
+}
+
+.navbar__menu li a:hover {
+  background: #3F5D45;
+  color: #fff;
+}
+
+.navbar__icon {
+  margin-left: 49px;
+}
+
+.navbar__icon:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true") no-repeat center center;
+  height: 496px;
+  margin-bottom: 60px;
+}
+
+.product {
+  padding: 0 42px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  max-width: 300px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.sidebar__title {
+  padding: 16px;
+}
+
+.sidebar__list {
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+}
+
+.sidebar__list li {
+  border-bottom: 1px solid #EAF0ED;
+}
+
+.sidebar__list li a {
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.sidebar__list li a:hover {
+  background: #EAF0ED;
+}
+
+.cardsGroup {
+  width: 620px;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.card__img {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
+  height: 315px;
+}
+
+.card__detail {
+  border: 1px solid #EAF0ED;
+}
+
+.card__detail .name {
+  padding: 14px 0;
+  border-right: 1px solid #EAF0ED;
+}
+
+.card__detail .price {
+  padding: 14px 0;
+}
+
+.card__btn {
+  padding: 16px 0;
+}
+
+.card__btn:hover {
+  background: #3F5D45;
+  color: #fff;
+}
+
+.card__recommend {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: .3rem;
+  padding: 10px;
+  top: 0;
+  left: 20px;
+}
+
+.card__icon {
+  right: 22px;
+  top: 19px;
+}
+
+.pagination {
+  padding: 0 42px;
+  margin-bottom: 60px;
+}
+
+.pagination li a {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #EAF0ED;
+}
+
+.pagination li a:hover {
+  background: #3F5D45;
+  color: #fff;
+}
+
+.footer__head {
+  padding: 30px 122px;
+}
+
+.text img {
+  margin-right: 20px;
+}
+
+.email__icon {
+  padding: 16px 20px;
+}
+
+.email__input {
+  width: 240px;
+  border: none;
+}
+
+.email__input:focus {
+  outline: none;
+}
+
+.email__arrow {
+  padding: 16px 18px;
+}
+
+.email__arrow:hover {
+  background: #ffd54d;
+}
+
+.footer__info {
+  padding: 30px 122px;
+  line-height: 1.5;
+}
+
+.footer__info .contact__detail {
+  margin-top: 115px;
+}
+
+.footer__info .slogan {
+  font-family: 'Noto Serif TC';
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: .3rem;
+}
+
+.footer__info .slogan__text {
+  margin-top: 1rem;
+}
+
+.footer__info .slogan__line {
+  width: 1px;
+  height: 44px;
+}
+
+.footer__floor {
+  padding: 0 122px 30px;
+}
+
+.footer__floor .social__line {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=all.css.map */

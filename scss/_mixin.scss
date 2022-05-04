@@ -1,0 +1,7 @@
+// mixin
+@mixin textHide {
+    // display: inline-block;
+    text-indent: 101%;
+    word-spacing: nowrap;
+    overflow: hidden;
+  }

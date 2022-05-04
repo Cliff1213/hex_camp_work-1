@@ -1,7 +1,12 @@
 // mixin
 @mixin textHide {
-    // display: inline-block;
-    text-indent: 101%;
-    word-spacing: nowrap;
-    overflow: hidden;
-  }
+  // display: inline-block;
+  text-indent: 101%;
+  word-spacing: nowrap;
+  overflow: hidden;
+}
+
+@mixin iconAnimate {
+  transform: scale(120%);
+  transition: 0.3s;
+}

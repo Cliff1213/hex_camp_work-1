@@ -446,7 +446,21 @@ body {
   padding: 0 122px 30px;
 }
 
-.footer__floor .social__line {
+.social__line {
   margin-right: 8px;
+}
+
+.social__line:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.social__facebook:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=all.css.map */

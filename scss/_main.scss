@@ -71,8 +71,10 @@
   width: 300px;
   margin-bottom: 20px;
   &__img {
-    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true');
     height: 315px;
+    &:hover {
+      @include iconAnimate;
+    }
   }
   &__detail {
     border: 1px solid $color-secondary;
@@ -103,6 +105,11 @@
     top: 19px;
   }
 }
+@each $key, $value in $cardImages {
+  .card-#{ $key } {
+    background: $value;
+  }
+}
 
 .pagination {
   padding: 0 42px;
@@ -127,12 +134,16 @@
   margin-right: 20px;
 }
 .email {
+  &:hover {
+    background: $color-secondary;
+  }
   &__icon {
     padding: 16px 20px;
   }
   &__input {
     width: 240px;
     border: none;
+    background: none;
     &:focus {
       outline: none;
     }
@@ -150,6 +161,15 @@
   line-height: 1.5;
   .contact__detail {
     margin-top: 115px;
+    li .phone:hover {
+      text-decoration: underline;
+    }
+    li .mail:hover {
+      text-decoration: underline;
+    }
+    li .address:hover {
+      text-decoration: underline;
+    }
   }
   .slogan {
     font-family: 'Noto Serif TC';

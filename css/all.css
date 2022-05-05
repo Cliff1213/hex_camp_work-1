@@ -328,8 +328,14 @@ body {
 }
 
 .card__img {
-  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
   height: 315px;
+}
+
+.card__img:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card__detail {
@@ -369,6 +375,30 @@ body {
   top: 19px;
 }
 
+.card-image-1 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
+}
+
+.card-image-2 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true");
+}
+
+.card-image-3 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true");
+}
+
+.card-image-4 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true");
+}
+
+.card-image-5 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true");
+}
+
+.card-image-6 {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true");
+}
+
 .pagination {
   padding: 0 42px;
   margin-bottom: 60px;
@@ -395,6 +425,10 @@ body {
   margin-right: 20px;
 }
 
+.email:hover {
+  background: #EAF0ED;
+}
+
 .email__icon {
   padding: 16px 20px;
 }
@@ -402,6 +436,7 @@ body {
 .email__input {
   width: 240px;
   border: none;
+  background: none;
 }
 
 .email__input:focus {
@@ -423,6 +458,18 @@ body {
 
 .footer__info .contact__detail {
   margin-top: 115px;
+}
+
+.footer__info .contact__detail li .phone:hover {
+  text-decoration: underline;
+}
+
+.footer__info .contact__detail li .mail:hover {
+  text-decoration: underline;
+}
+
+.footer__info .contact__detail li .address:hover {
+  text-decoration: underline;
 }
 
 .footer__info .slogan {

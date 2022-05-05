@@ -18,14 +18,14 @@
   &__menu li a {
     padding: 8px 10px;
     &:hover {
-      background: $color-primary;
-      color: $color-light;
+      background: $primary;
+      color: $light;
     }
   }
   &__icon {
     margin-left: 49px;
     &:hover {
-      @include iconAnimate;
+      @include scaleAnimate;
     }
   }
 }
@@ -49,17 +49,17 @@
     padding: 16px;
   }
   &__list {
-    border-left: 1px solid $color-secondary;
-    border-right: 1px solid $color-secondary;
+    border-left: 1px solid $secondary;
+    border-right: 1px solid $secondary;
   }
   &__list li {
-    border-bottom: 1px solid $color-secondary;
+    border-bottom: 1px solid $secondary;
   }
   &__list li a {
     display: inline-block;
     padding: 15px 0;
     &:hover {
-      background: $color-secondary;
+      background: $secondary;
     }
   }
 }
@@ -72,16 +72,17 @@
   margin-bottom: 20px;
   &__img {
     height: 315px;
-    &:hover {
-      @include iconAnimate;
+    overflow: hidden;
+    &--effect:hover {
+      @include scaleAnimate;
     }
   }
   &__detail {
-    border: 1px solid $color-secondary;
+    border: 1px solid $secondary;
   }
   &__detail .name {
     padding: 14px 0;
-    border-right: 1px solid $color-secondary;
+    border-right: 1px solid $secondary;
   }
   &__detail .price {
     padding: 14px 0;
@@ -89,8 +90,8 @@
   &__btn {
     padding: 16px 0;
     &:hover {
-      background: $color-primary;
-      color: $color-light;
+      background: $primary;
+      color: $light;
     }
   }
   &__recommend {
@@ -119,10 +120,10 @@
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border: 1px solid $color-secondary;
+    border: 1px solid $secondary;
     &:hover {
-      background: $color-primary;
-      color: $color-light;
+      background: $primary;
+      color: $light;
     }
   }
 }
@@ -135,7 +136,7 @@
 }
 .email {
   &:hover {
-    background: $color-secondary;
+    background: $secondary;
   }
   &__icon {
     padding: 16px 20px;
@@ -151,7 +152,7 @@
   &__arrow {
     padding: 16px 18px;
     &:hover {
-      background: darken($color-warning, 10%);
+      background: darken($warning, 10%);
     }
   }
 }
@@ -192,11 +193,11 @@
   &__line {
     margin-right: 8px;
     &:hover {
-      @include iconAnimate;
+      @include scaleAnimate;
     }
   }
   &__facebook:hover {
-    @include iconAnimate;
+    @include scaleAnimate;
   }
 }
 

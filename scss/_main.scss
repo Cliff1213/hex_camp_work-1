@@ -82,10 +82,12 @@
   }
   &__detail .name {
     padding: 14px 0;
+    width: calc( 100% - 127px );
     border-right: 1px solid $secondary;
   }
   &__detail .price {
     padding: 14px 0;
+    width: 127px;
   }
   &__btn {
     padding: 16px 0;
